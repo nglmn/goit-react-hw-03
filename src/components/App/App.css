@@ -1,0 +1,18 @@
+#root {
+  padding: 2rem;
+}
+.phonebook{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.form-panel{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.app-interface{
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}

@@ -1,0 +1,7 @@
+.user-list{
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 30px;
+}

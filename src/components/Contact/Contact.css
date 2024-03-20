@@ -1,0 +1,26 @@
+.user-item{
+    width: 250px;
+    height: fit-content;
+    padding: 25px;
+    border: 1px solid aliceblue;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.user-info{
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.icon{
+    margin-right: 10px;
+}
+.delete-btn{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px 20px;
+    background-color: #4234dd;
+}

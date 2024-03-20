@@ -1,0 +1,18 @@
+.search-bar{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.search-input[type=text]{
+    padding: 10px 25px 10px 25px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: 1px solid aliceblue;
+    outline: none;
+}
+.search-input[type=text]:focus{
+    border: 1px solid #5c4dff;
+}
+.serch-label{
+    font-size: 15px;
+}

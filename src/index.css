@@ -13,6 +13,20 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  padding: 0;
+}
+ul,ol,li{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,7 +39,6 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
