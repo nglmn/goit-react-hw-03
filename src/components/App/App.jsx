@@ -8,15 +8,12 @@ import './App.css';
 
 const App = () => {
   const [users, setUsers] = useState(() => {
-    const localStorageData = JSON.parse(localStorage.getItem("users"));
-    if (localStorageData.length === 0) return initUsers;
-    return localStorageData;
+    const dataFromLS = localStorage.getItem('users');
+    if (!dataFromLS) return initUsers;
+
+    return JSON.parse(localStorage.getItem("users"));
   });
   const [filterUsers, setFilterUsers] = useState('');
-
-  useEffect(() => {
-    localStorage.setItem("users", JSON.stringify(users))
-  }, [users])
 
 
   const addUser = (newUser) => {
@@ -37,6 +34,10 @@ const App = () => {
       })
     })
   }
+
+  useEffect(() => {
+    localStorage.setItem("users", JSON.stringify(users))
+  }, [users])
 
   return (
     <div className="phonebook">
